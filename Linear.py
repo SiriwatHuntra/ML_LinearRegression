@@ -1,5 +1,6 @@
 #import lib
 import matplotlib.pyplot as plt
+from scipy import stats
 
 #data
 x = [1,2,3,4,5]
