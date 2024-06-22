@@ -36,8 +36,8 @@ def plot_reg_line(x, y, b):
 
 def main():
     #data
-    x = np.array([1,2,3,4,5])
-    y = np.array([1,2,3,4,5])
+    x = np.array([0,2])
+    y = np.array([0,2])
 
     #etimate coef
     b = estimate_coef(x, y)
