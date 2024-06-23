@@ -1,3 +1,4 @@
+#import lib
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -7,7 +8,6 @@ y = np.array([0, 2])
 
 w0 = 0 # y-axis intercept
 w1 = 0 # slope
-
 
 #optimization track
 w0_history = [] # y-axis intercept
