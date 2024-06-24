@@ -91,3 +91,13 @@ plt.colorbar(contour)
 plt.legend()
 plt.grid(True)
 plt.show()
+
+
+# Plot cost change over iterations
+plt.figure(figsize=(8, 6))
+plt.plot(range(iterations), mse_history, marker='o', color='blue')
+plt.xlabel('Iteration')
+plt.ylabel('Cost')
+plt.title('Cost Change over Iterations')
+plt.grid(True)
+plt.show()
