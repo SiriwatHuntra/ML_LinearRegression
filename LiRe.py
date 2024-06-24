@@ -33,7 +33,7 @@ def gradient_descent(x, y, w0, w1, alpha, iterations):
         w1_history.append(w1)
         mse = mean_squared_error(x, y, w0, w1) #mse check
         mse_history.append(mse)
-    return w0, w1, 
+    return w0, w1
 
 def mean_squared_error(x, y, w0, w1):
     predictions = prediction(x, w0, w1) # Get predictions using current w0 and w1
@@ -53,15 +53,13 @@ print(f'Optimize w1: {w1:.2f}')
 mse = mean_squared_error(x, y, w0, w1)
 print(f'Mean Squared Error: {mse:.2f}')
 
-#plot, result
+#plot, result of gradient descent 
 plt.figure(figsize=(10, 6))
 plt.scatter(x, y, color='red', label='Data')
 x_line = np.linspace(min(x), max(x), 100)
 y_line = prediction(x_line, w0, w1)
 plt.plot(x_line, y_line, color='blue', label=f'Prediction Line: h(x) = {w0:.2f} + {w1:.2f}x')
 
-for i in range(len(x)):
-    plt.plot([x[i], x[i]], [y[i], prediction(x[i], w0, w1)], 'g--')
     
 plt.title('Linear Regression with Gradient Descent')
 plt.xlabel('x')
